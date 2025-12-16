@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BYBIT Links Bot</title>
+
+<style>
+:root {
+    --bg: #0b0f19;
+    --card: #121826;
+    --text: #eaeaea;
+    --muted: #9ca3af;
+    --accent: #f3ba2f;
+    --border: #1f2937;
+    --note: #1f2937;
+}
+
+.light {
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #111827;
+    --muted: #4b5563;
+    --accent: #f59e0b;
+    --border: #e5e7eb;
+    --note: #fef3c7;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+}
+
+.container {
+    max-width: 920px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h1, h2, h3 {
+    color: var(--accent);
+}
+
+.subtitle {
+    color: var(--muted);
+    margin-bottom: 30px;
+}
+
+.card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 32px;
+    border: 1px solid var(--border);
+}
+
+.note {
+    background: var(--note);
+    padding: 16px;
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    margin: 20px 0;
+    font-size: 0.95rem;
+}
+
+.toggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+</style>
+</head>
+
+<body>
+
+<button class="toggle" onclick="toggleTheme()">🌚/🌝</button>
+
+<div class="container">
+
+<h1>BYBIT Links Bot</h1>
+<p class="subtitle">
+A <strong>Telegram utility bot</strong> that converts Bybit links into
+<strong><em>app-opening deep links</em></strong>.
+</p>
+
+<div class="card">
+<p>
+<strong>BYBIT Links Bot</strong> is designed to improve user experience by converting
+<em>publicly available Bybit URLs</em> into links that open directly inside the
+<strong>official Bybit mobile application</strong> where supported.
+</p>
+
+<div class="note">
+<strong>Important:</strong> This bot does <em>not</em> provide trading advice,
+signals, or financial recommendations.
+</div>
+</div>
+
+<div class="card">
+<h2>How It Works (Technology)</h2>
+
+<p>
+The bot operates using <strong>publicly documented web and mobile deep-linking standards</strong>.
+It does <em>not</em> use private APIs, internal systems, or unauthorized access.
+</p>
+
+<ul>
+    <li><strong>User</strong> submits a valid Bybit-related link</li>
+    <li>The bot <em>verifies the domain</em></li>
+    <li>The URL is <strong>safely encoded</strong></li>
+    <li>The link is wrapped in an <strong>app deep-link format</strong></li>
+    <li>If the app is installed → <em>opens inside Bybit app</em></li>
+    <li>If not → <em>falls back to browser or app store</em></li>
+</ul>
+
+<p>
+The bot <strong>never modifies page content</strong>.  
+It only reformats links for compatibility and convenience.
+</p>
+</div>
+
+<div class="card">
+<h2>Terms & Conditions</h2>
+
+<h3>1. Nature of the Service</h3>
+<p>
+<strong>BYBIT Links Bot</strong> is a <em>technical utility tool</em>. It does not offer
+financial, investment, or trading advice of any kind.
+</p>
+
+<h3>2. No Affiliation</h3>
+<p>
+This bot is <strong><em>not affiliated, associated, authorized, endorsed by, or officially
+connected with</em></strong> Bybit or its related entities.
+All trademarks belong to their respective owners.
+</p>
+
+<h3>3. User Responsibility</h3>
+<ul>
+    <li>You are <strong>solely responsible</strong> for how you use generated links.</li>
+    <li>All actions on external platforms are taken <em>at your own risk</em>.</li>
+    <li>You understand the risks associated with cryptocurrency platforms.</li>
+</ul>
+
+<h3>4. Accuracy & Availability</h3>
+<p>
+Deep links may stop working due to app updates, regional restrictions,
+or platform changes. The service is provided <strong>“as is”</strong>.
+</p>
+
+<h3>5. Data & Privacy</h3>
+<p>
+The bot may store <strong>limited technical data</strong> such as:
+</p>
+<ul>
+    <li>Telegram user ID</li>
+    <li>Telegram username (if available)</li>
+    <li>Timestamps and conversion counts</li>
+</ul>
+
+<div class="note">
+<strong>No sensitive data</strong> (passwords, private keys, seed phrases,
+private chats, or payment information) is collected.
+</div>
+
+<h3>6. Third-Party Links</h3>
+<p>
+The bot processes third-party links and has no control over external content,
+availability, or security practices.
+</p>
+
+<h3>7. Limitation of Liability</h3>
+<ul>
+    <li>No liability for financial or trading losses</li>
+    <li>No liability for account restrictions or platform issues</li>
+    <li>No liability for direct or indirect damages</li>
+</ul>
+
+<p>
+Use of this bot is <strong><em>entirely at your own risk</em></strong>.
+</p>
+
+<h3>8. Abuse & Misuse</h3>
+<p>
+Users must not use the bot for spam, phishing, impersonation, or misleading activity.
+Access may be restricted without notice.
+</p>
+
+<h3>9. Service Changes & Termination</h3>
+<p>
+Features may be modified, suspended, or discontinued at any time
+without prior notice.
+</p>
+
+<h3>10. Updates to Terms</h3>
+<p>
+Continued use of the bot after updates implies acceptance of the latest terms.
+</p>
+
+<h3>11. Governing Principle</h3>
+<p>
+This bot is a <strong>technical convenience tool</strong>, not a financial service.
+</p>
+
+<h3>12. Technology Clarification</h3>
+<p>
+The bot does not access user accounts, execute trades, or interact with
+Bybit systems beyond normal public web access.
+</p>
+
+<h3>13. Final Acceptance</h3>
+<p>
+By using this bot, you confirm that you have
+<strong>read, understood, and agreed</strong> to these Terms & Conditions.
+</p>
+</div>
+
+<div class="footer">
+© 2025 · <strong>BYBIT Links Bot</strong> · shuklaji.me  
+<br><br>
+📩 <strong>Contact developer:</strong>
+<a href="https://t.me/maitrey" target="_blank">@maitrey</a>
+<br>
+<em>Built as a technical utility, not a financial service.</em>
+</div>
+
+</div>
+
+<script>
+function toggleTheme() {
+    document.body.classList.toggle("light");
+}
+</script>
+
+</body>
+</html>
